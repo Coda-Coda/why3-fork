@@ -1,3 +1,7 @@
+NOTE
+----
+Note: this is not the official Why3 repository, please see https://gitlab.inria.fr/why3/why3 instead.
+
 WHY3
 ====
 
