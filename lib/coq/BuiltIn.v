@@ -12,6 +12,8 @@
 Require Export ZArith.
 Require Export Rbase.
 
+Require Strings.String.
+
 Require Import ClassicalEpsilon.
 
 Class WhyType T := {
@@ -71,6 +73,14 @@ Proof.
 split.
 exact false.
 exact Bool.bool_dec.
+Qed.
+
+Notation string := String.string.
+Global Instance string_WhyType : WhyType String.string.
+Proof.
+split.
+exact String.EmptyString.
+exact String.string_dec.
 Qed.
 
 Global Instance func_WhyType : forall (a:Type) {a_WT:WhyType a} (b:Type) {b_WT:WhyType b}, WhyType (a -> b).
