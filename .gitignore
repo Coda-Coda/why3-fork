@@ -31,7 +31,6 @@ why3.conf
 /config.log
 /autom4te.cache
 /Makefile
-/configure
 /semantic.cache
 /TAGS
 /output_why3
